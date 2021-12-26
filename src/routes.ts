@@ -6,3 +6,5 @@ const router = Router();
 router.post('/users/create',( request, response ) =>{
   return createUserController.handle( request, response );
 })
+
+export { router }
