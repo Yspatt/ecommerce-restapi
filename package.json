@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "nodemailer": "^6.7.2",
+    "sequelize": "^7.0.0-alpha.2",
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {

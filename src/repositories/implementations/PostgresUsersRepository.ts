@@ -15,4 +15,10 @@ export class PostgresUsersRepository implements IUserRepository {
     this.users.push(user);
   }
 
+  async refreshToken(email: string, token: string): Promise<void> {
+      const user = this.users.find(user => user.email === email);
+
+      user.token = token;
+  }
+
 }

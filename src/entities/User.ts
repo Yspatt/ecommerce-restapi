@@ -7,7 +7,9 @@ export class User {
   public email: string;
   public password: string;
 
-  constructor(props: Omit<User,'id'>,id?: string) {
+  public token: string;
+
+  constructor(props: Omit<User,'id'|'token'>,id?: string) {
     Object.assign(this,props);
 
     if (!id) {
